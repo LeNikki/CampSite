@@ -1,0 +1,270 @@
+*{
+    color:white;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-image:linear-gradient( #212f28, #212f28, rgb(4, 15, 70));
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+.wel-msg{
+    font-style: normal;
+}
+@keyframes book-now {
+    from{
+       position: relative;
+       bottom: -13rem;
+       background-color: #212f28;
+    }
+    to{
+       bottom: 12rem;
+       box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(9, 224, 252, 0.659) 0px 10px 10px;
+    }
+}
+.book-now{
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+.book-now #icon{
+    color: black;
+}
+.book-now a{
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    border-radius: 5px;
+    animation-name: book-now;
+    animation-duration: 5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(9, 224, 252, 0.659) 0px 10px 10px;
+}
+.book-now a:hover{
+    background-color: red;
+    color: white;
+}
+.main-cont{
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+   
+.navbar{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar ul li{
+    width: 100px;
+    padding: 0.5rem;
+}
+.navbar ul li:hover{
+    border: 0.3px solid white;
+    border-radius: 10px;
+    width: 98px; /*just so it matches the li width and not move the others*/
+    
+    
+}
+.routes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
+   
+}
+
+@keyframes welcome{
+    from{
+       position: relative;
+       left: -40rem;
+    }
+    to{
+        position: relative;
+        left: 0rem;
+    }
+}
+.welcome{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: welcome;
+    animation-duration: 5000ms;
+    
+   
+}
+.title{
+    letter-spacing: 5px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    font-style: bold;
+}
+
+.div2{
+    
+    width:100%;
+    z-index: 10;
+    position: absolute;
+    top: 25em;
+}
+.fg-img{
+    width: 100%;
+    height: 100%;
+}
+.div3{
+    height: 50vh;
+}
+
+/*-----------*/
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+@keyframes opacity-load{
+    from{
+      transform: scale(60%);
+    }
+    to{
+      transform: scale(100%);
+    }
+}
+
+.div4{
+    padding: 1em 0;
+    height:100%;
+    width:80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.exp-tag {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: opacity-load;
+    animation-duration: 5000ms;
+   
+}
+
+.experiences{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.sec{
+    width: 200px;
+    animation-name: opacity-load;
+    animation-duration: 5000ms;
+}
+.sec p{
+    width: 200px;
+}
+.sec img{
+    border: solid 5px white;
+    border-radius: 15px  0 15px 0;
+    transition: 0.3s;
+}
+.sec img:hover{
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 10px 20px;
+    width: 203px;
+    
+}
+.camping-par{
+    height: 2em;
+}
+.div5-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: flex;
+}
+#div5-img{
+    width: 300px;
+    border: solid 5px white;
+    border-radius: 50%;
+    animation-name: opacity-load;
+    animation-duration: 5000ms;
+}
+.learn{
+    display: inline;
+    height: 200px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-justify: center;
+    text-align: center;
+    animation-name: opacity-load;
+    animation-duration: 5000ms;
+}
+.learn p{
+    margin-bottom: 3em;
+    color:black;
+}
+.abt-btn{
+    background-color: rgb(4, 15, 70);
+    padding: 1rem;
+    width: 6em;
+    border-radius: 5px;
+    color:rgb(219, 219, 219);
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(9, 224, 252, 0.659) 0px 10px 10px;
+}
+.abt-btn:hover{
+    background-color: red;
+    color:white;
+}
+footer{
+    width: 100%;
+    height: 180px;
+    margin-top: 2em;
+    padding: 1rem 0;
+    background-color: #020d26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.div5-sec p{
+    width: 500px;
+}
+.socmed-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+.p-footer{
+    padding-bottom: 1em;
+}
+.socmed-icons a i {
+    font-size: 30px;
+}
+.socmed-icons a i:hover{
+    color:rgba(22, 115, 237, 0.899);
+}

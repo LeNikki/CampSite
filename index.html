@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
+<title>Welcome To Nicole's Campsite</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="main-cont">
+    <nav class="navbar">
+        <h1 class="logo" style="font-family: 'DM Serif Display', serif;">Nicole's Campsite</h1>
+        <ul class="routes">
+            <li class="home">Home</li>
+            <li class="home"><a href="#div4" style="text-decoration:none;">Experiences</a></li>
+            <li class="home"><a href="./components/About.html" style="text-decoration:none;">About Us</a></li>
+            <li class="home"><a href="./components/Contact.html" style="text-decoration: none; font-weight: 900;"><i class="fas fa-book"></i> Book now!</a></li>
+        </ul>
+    </nav>
+    
+    <div class="welcome" >
+        <h2 class="title">A once in a lifetime experience.</h2>
+        <p class="wel-mssg">Experience a whole new definition of calmness and adventure! </p>
+    </div>
+    <section class="book-now">
+    <a href="./components/Contact.html" style="text-decoration: none; font-weight: 900;" ><i class="fas fa-book" id="icon"></i>  Book now!</a>
+    </section>   
+    <div class="div2">
+             <!--foreground image-->
+             <img class="fg-img" src="./assets/fg_var.png">
+        </div>
+    </div>
+    
+   
+    <div class="div3">
+        <!--Offset-->
+    </div>
+
+    
+    <div class="div4 .load-hidden" id="div4">
+        <div class="exp-tag">
+            <h1>Must Try Experiences!</h1>
+            <p>These are the most awaited things that our customers enjoy when camping at our site</p>
+        </div>
+        <div class="experiences">
+            <section class="sec">
+                <img src="./assets/camp1.png" width=200px alt="camp-style">
+                <p class="camping-par"><b>Different Camping Styles</b>
+                <br>Different camping view, tent size, camping style fitted for your needs!</p>
+            </section>
+            <section class="sec">
+                <img src="./assets/camp2.png" width=200px alt="camp-style">
+                <p class="camping-par"><b>Star Gazing</b>
+                    <br>Enjoy the beautiful night sky away from the light pollution of the city.</p>
+            </section>
+            <section class="sec">
+                <img src="./assets/camp3.png" width=200px alt="camp-style">
+                <p class="camping-par"><b>Outdoor Cinema</b>
+                    <br>Enjoy outdoor cinema together with other night campers.</p>
+            </section>
+            <section class="sec">
+                <img src="./assets/camp4.png" width=200px alt="camp-style">
+                <p class="camping-par"><b>Camp Fire</b>
+                    <br>Welp. Who would want to miss this part?  </p>
+            </section>
+        </div>
+    </div>
+
+    
+    <div class="div5">
+        <div class="exp-tag">
+            <h1>Why you should try camping</h1>
+        </div>
+        <section class="div5-sec">
+            <img id="div5-img" src="./assets/why.png" >
+            <section class="learn">
+                <h4 style="color:black;">○ ○ ○ ○ ○</h4>
+            <p>Outside factors boost mental health. Researchers found that being outside 
+                led to fewer depressive thoughts. A foundation for sound sleep and 
+                good health, your circadian rhythms can be reconnected when you sleep outside, 
+                reading and unwinding while camping.</p>
+                <a href="./components/About.html" class="abt-btn">Learn more about us! <i class="fa-solid fa-arrow-right"></i></a>
+            </section>   
+                
+            
+        </section>
+        
+    </div>
+
+    <footer>
+        <h3>Follow us on social media!</h3>
+        <ul class = "socmed-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </ul>
+       <p class="p-footer">This project is coded and designed by: Nicole P. Satiembre BSCpE Day 3 G</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a7ce6ca20b.js" crossorigin="anonymous"></script>
+ <script>
+		ScrollReveal().reveal('.div4', { delay: 1000});
+        ScrollReveal().reveal('.sec', { delay: 2000, interval: 500});
+        ScrollReveal().reveal('.div5', { delay: 1000,  easing: 'steps(5)'});
+        ScrollReveal().reveal('#div5-img', { delay: 1500 });
+        ScrollReveal().reveal('.learn', { delay: 2000, });
+	</script>
+    <script src="./script.js"></script>
+</body>
+</html>

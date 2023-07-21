@@ -1,0 +1,286 @@
+*{
+    color:white;
+    font-family: 'Nunito', sans-serif;
+}
+ body{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(29, 37, 67), rgb(0, 183, 255));
+ }
+
+ .about-cont{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/about-first.jpg);
+    background-blend-mode:darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+ .intro{
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ @keyframes onload{
+    from {
+       transform: scale(40%);
+    }
+    to {
+        transform: scale(100%);
+    }
+ }
+ @keyframes welcome{
+    from{
+       position: relative;
+       left: -40rem;
+    }
+    to{
+        position: relative;
+        left: 0rem;
+    }
+}
+@keyframes book-now {
+    from{
+       position: relative;
+       bottom: -13rem;
+      
+    }
+    to{
+       bottom: 12rem;
+      
+    }
+}
+ .title{
+    animation-name: welcome;
+    animation-duration: 5000ms;
+    font-size: 100px; 
+    letter-spacing: 5px;
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+ }
+ .subtitle{
+    animation-name: book-now;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    font-size: 18px;
+    font-style: normal;
+ }
+ .fa-tent{
+    animation-name: onload;
+    animation-duration: 5000ms;
+   font-size: 50px;
+   margin-top: 0;
+    border-radius: 50%;
+   
+    padding: 1rem;
+   
+ }
+ .div-2{
+   
+    height: 100%;
+    background-color: #020d26;
+    margin: 0;
+    padding: 5rem 1rem;
+    font-weight: 900;
+    text-align: center;
+ }
+ .div-2 p{
+    letter-spacing: 5px;
+    font-family: 'DM Serif Display', serif;
+ }
+ .div-3{
+  
+    height: 50vh;
+    background-image: url(../assets/about-food.jpeg);
+   background-attachment: fixed;
+ }
+ .div-4{
+    
+    text-align: center;
+    padding: 4em 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+ }
+ .know-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    
+ }
+ .know-img{
+    width: 200px;
+   height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: rgba(0, 0, 0, 0.453) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ }
+ .know-p{
+    width: 300px;
+   background-color: white;
+   color:black;
+   height: 100px;
+   padding: 2rem 1rem 1rem 1rem;
+   border-radius: 0px  20px 0px 20px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+
+ /*REVIEWS*/
+ .reviews{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+ .customer-feed{
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    margin:0;
+    padding: 1rem;
+    text-align: center;
+ }
+ .reviews-cont{
+    
+    width: 80%;
+    padding: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    overflow-x:hidden;
+    cursor: pointer;
+ }
+ #angle-left, #angle-right{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    cursor: pointer;
+    margin: 2em;
+    width: 10px;
+    height: 10px;
+ }
+ #angle-left:hover, #angle-right:hover{
+    box-shadow: rgba(0, 0, 0, 0.579) 5px 8px 10px;
+ }
+
+ #angle-left{
+    
+ }
+ .customer{
+    background-color: white;
+    width: 500px; 
+    padding: 1rem;
+    border-radius: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0 1rem;
+ }
+ 
+ .customer h1, .customer p{
+    color:black;
+    width: 300px;
+ }
+ .user-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px white;
+    margin: 3px;
+ }
+.name{
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+}
+#like{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10px;
+}
+#like i {
+    cursor: pointer;
+}
+ /**/
+
+.navbar{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar ul li{
+    width: 100px;
+    padding: 0.5rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar ul li:hover{
+    border: 0.3px solid white;
+    border-radius: 10px;
+    width: 98px; /*just so it matches the li width and not move the others*/    
+}
+.routes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
+   
+}
+.logo{
+    
+    font-family: 'DM Serif Display', serif;
+}
+
+footer{
+    width: 100%;
+    height: 180px;
+    padding: 1rem 0;
+    background-color: #020d26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div5-sec p{
+    width: 500px;
+}
+.socmed-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+.p-footer{
+    padding-bottom: 1em;
+}
+.socmed-icons a i {
+    font-size: 30px;
+}
+.socmed-icons a i:hover{
+    color:rgba(22, 115, 237, 0.899);
+}
